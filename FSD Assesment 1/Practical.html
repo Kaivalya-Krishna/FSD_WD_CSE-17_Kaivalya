@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Card</title>
+    <style>
+        body {
+            background: "C:\Users\Kaivalya Krishna\OneDrive\Desktop\FSD_WD\FSD_WD_CSE-17_Kaivalya\FSD Assesment 1\Media.jpg"; 
+            background-repeat: no-repeat;
+        }
+        a:hover {
+            color: red; transition : color 0.3s ease;
+        }
+        table:hover {
+            transform : scale (1.20); transition : transform 5s ease;
+        }
+        </style>
 </head>
 <body>
-    <h1 align = "center"><b>Profile Card</b></h1>
+    <h1 align = "center"><b><u>Profile Card</u></b></h1>
 
-    <table border = "3" align = "center">
+    <table border = "3" align = "center" width = "500" style="border-radius:10px;">
         <tr>
             <td colspan="2" align = "center">
-                <img src="../HTML/Kaivalya_Krishna_PR_2.jpg" height = "150" width = "100" alt="Profile Picture" ><br>
+                <img src="../HTML/Kaivalya_Krishna_PR_2.jpg" height = "150" width = "100" alt="Profile Picture" style = "border-radius: 10px"><br>
                 Profile Picture
             </td>
         </tr>
@@ -25,7 +37,7 @@
         </tr>
         <tr>
             <td><b>Email</b></td>
-            <td><a href="mailto:kaivalyya@email.com">kaivalyya@email.com</a></td>
+            <td><a href="mailto:kaivalyya@email.com" style = "text-decoration: none">kaivalyya@email.com</a></td>
         </tr>
         <tr>
             <td><b>Phone</b></td>
@@ -37,7 +49,7 @@
         </tr>
         <tr align = "center">
             <td colspan="2" class="links">
-                <a href="https://github.com/Kaivalya-Krishna">GitHub</a> | <a href="https://www.linkedin.com/in/kaivalya-krishna-014541320/">LinkedIn</a>
+                <a href="https://github.com/Kaivalya-Krishna" style = "text-decoration: none">GitHub</a> | <a href="https://www.linkedin.com/in/kaivalya-krishna-014541320/" style = "text-decoration: none">LinkedIn</a>
             </td>
         </tr>
     </table>
