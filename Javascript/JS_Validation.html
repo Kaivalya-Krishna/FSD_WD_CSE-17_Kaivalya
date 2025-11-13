@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+
+  <script>
+    function validateForm() 
+    {
+      const name = document.getElementById("name").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const namePattern = /^[A-Za-z]+$/;
+
+      if (name.length < 6 || !namePattern.test(name)) 
+      {
+        alert("Name should contain only letters and be at least 6 characters long.");
+        document.getElementById("name").focus();
+        return false;
+      }
+
+      if (password.length < 6) 
+      {
+        alert("Password should be at least 6 characters long.");
+        document.getElementById("password").focus();
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</head>
+
