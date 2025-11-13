@@ -45,3 +45,69 @@
   </script>
 </head>
 
+<body>
+  <h2 align="center">Registration Page</h2>
+
+  <form onsubmit="return validateForm()">
+    Name:
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+    Password:
+    <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+    Email:
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+    Phone Number:
+    <input type="text" id="phone" name="phone" placeholder="Enter your phone number" maxlength="10" required><br><br>
+
+    Gender:
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other
+    <br><br>
+
+    Date of Birth:
+    <select name="day">
+      <option>Day</option>
+      <script>
+        for (let i = 1; i <= 31; i++) {
+          document.write("<option>" + i + "</option>");
+        }
+      </script>
+    </select>
+
+    <select name="month">
+      <option>Month</option>
+      <option>Jan</option><option>Feb</option><option>Mar</option>
+      <option>Apr</option><option>May</option><option>Jun</option>
+      <option>Jul</option><option>Aug</option><option>Sep</option>
+      <option>Oct</option><option>Nov</option><option>Dec</option>
+    </select>
+
+    <select name="year">
+      <option>Year</option>
+      <script>
+        for (let y = 1950; y <= 2025; y++) {
+          document.write("<option>" + y + "</option>");
+        }
+      </script>
+    </select>
+    <br><br>
+
+    Languages Known:
+    <input type="checkbox" name="lang" value="English"> English
+    <input type="checkbox" name="lang" value="Telugu"> Telugu
+    <input type="checkbox" name="lang" value="Hindi"> Hindi
+    <input type="checkbox" name="lang" value="Tamil"> Tamil
+    <br><br>
+
+    Address:<br>
+    <textarea rows="4" cols="30" name="address" placeholder="Enter your address"></textarea>
+    <br><br>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Reset">
+  </form>
+</body>
+</html>
